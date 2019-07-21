@@ -13,4 +13,11 @@ class Appointment
     @@all 
   end 
   
+  def patients 
+    self.patients
+  end 
+  
+  def doctors
+    self.doctors
+  
 end 
