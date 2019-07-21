@@ -20,8 +20,8 @@ class Doctor
   end 
   
   def patients
-    appointments.select do |apt|
-      apt.patients
+    appointments.select do |appointment|
+      appointment.patients
     end
   end
   
