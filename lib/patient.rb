@@ -13,11 +13,11 @@ class Patient
     Appointment.new(self, doctor, date)
   end
   
-  # def artists
-  #   Artist.all.each do |artist| 
-  #     artist.name
-  #   end 
-  # end   
+  def appointments
+    Appointment.all.select do |appointment|
+      appointment.patient == self
+    end
+  end  
   
   def self.all
     @@all
