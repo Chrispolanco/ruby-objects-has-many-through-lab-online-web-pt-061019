@@ -14,10 +14,10 @@ class Appointment
   end 
   
   def patients 
-    self.patients
+    self.patient
   end 
   
   def doctors
-    self.doctors
-  
+    self.doctor
+  end 
 end 
